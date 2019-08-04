@@ -1,0 +1,6 @@
+一、@Scope("prototype")
+    默认是单例，加了注解每次从容器获取的bean就不是单例的了
+二、@Lazy(true)
+    懒加载，只有到使用该bean时候才实例化bean
+三、类名 implements InitializingBean
+    实现该接口可以看到bean的生命周期
